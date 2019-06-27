@@ -1,153 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Friend Finder</title>
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </head>
-<body>
-	
-	<div class="container">
 
-		<div class="jumbotron">
-			<div class="Mntitle"><h1>Meet your favorite Super Trooper</h1></div>
-		
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <div class="Mntitle">
+                <h1>Meet your favorite Super Trooper</h1>
+            </div>
+
             <h2 class="Mntitle"> Take our survey </h2>
             <h2 class="Mntitle"> and find out who you are most compatible with! </h2>
             <h2> Survey Questions</h2>
             <h3> About you </h3>
             <h4> Name (req) </h4>
-            <input type="text" name="" id="name" class="form-control" required/>
+            <input type="text" name="" id="name" class="form-control" required />
             <h4> Link to photo (Req) </h4>
-            <input type="text" name="" id="photo" class="form-control" required/>
-            
-            <h3>#1</h3> 
+            <input type="text" name="" id="photo" class="form-control" required />
+
+            <h3>#1</h3>
             <h4> I like to chug maple syrup. </h4>
             <select data-placeholder="" class="chosen-select" id="q1">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
 
             <h3>#2</h3> 
             <h4> I like bears.  </h4>
-            <select data-placeholder="" class="chosen-select" id="q2">
+            <select data-placeholder="" class=" chosen-select" id="q2">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
 
             <h3>#3</h3> 
             <h4> I am a sick mofo. </h4>
-            <select data-placeholder="" class="chosen-select" id="q3">
+            <select data-placeholder="" class=" chosen-select" id="q3">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
 
             <h3>#4</h3> 
             <h4> Litering and...  </h4>
-            <select data-placeholder="" class="chosen-select" id="q4">
+            <select data-placeholder="" class=" chosen-select" id="q4">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
             
             <h3>#5</h3> 
             <h4> I sometimes get suspended.  </h4>
-            <select data-placeholder="" class="chosen-select" id="q5">
+            <select data-placeholder="" class=" chosen-select" id="q5">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
             <h3>#6</h3> 
             <h4> I like car ramrod. </h4>
-            <select data-placeholder="" class="chosen-select" id="q6">
+            <select data-placeholder="" class=" chosen-select" id="q6">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
 
             <h3>#7</h3> 
             <h4> I like Mexico. </h4>
-            <select data-placeholder="" class="chosen-select" id="q7">
+            <select data-placeholder="" class=" chosen-select" id="q7">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
 
             <h3>#8</h3> 
             <h4> I like to teach boys lessons. </h4>
-            <select data-placeholder="" class="chosen-select" id="q8">
+            <select data-placeholder="" class=" chosen-select" id="q8">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
 
             <h3>#9</h3> 
             <h4> I like to fish. </h4>
-            <select data-placeholder="" class="chosen-select" id="q9">
+            <select data-placeholder="" class=" chosen-select" id="q9">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
 
             <h3>#10</h3> 
             <h4> I enjoy doing the repeater. </h4>
-            <select data-placeholder="" class="chosen-select" id="q10">
+            <select data-placeholder="" class=" chosen-select" id="q10">
                 <option value=""> </option>
-                <option value="1 (Strongly agree)"> 1  </option>
-                <option value="2"> 2  </option>
-                <option value="3"> 3  </option>
-                <option value="4"> 4  </option>
+                <option value="1 (Strongly agree)"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
                 <option value="5 (Strongly disagree)""> 5  </option>
             </select>
 
-            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
-                <i class="fa fa-check-circle" aria-hidden="true"></i> Submit
-            </button>
+            <button type=" submit" class="btn btn-primary btn-lg btn-block" id="submit">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+                    </button>
 
-            <footer class="footer text-center">
-                <div class="container">
-                    <p> About James
-                        <a href="https://github.com/">Github repo</a>
-                    </p>
-                </div>
-            </footer>
+                    <footer class="footer text-center">
+                        <div class="container">
+                            <p> About James
+                                <a href="https://github.com/">Github repo</a>
+                            </p>
+                        </div>
+                    </footer>
         </div>
         <div id="resultModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
@@ -160,11 +173,8 @@
                     </div>
                     <div class="modal-body">
                         <h2 id="matchName"> </h2>
-                        <img 
-                            id="matching"
-                            src="https://viaplaceholder.com/400x400"
-                            alt = "Placeholder if user picture doesn't load"
-                        />
+                        <img id="matching" src="https://viaplaceholder.com/400x400"
+                            alt="Placeholder if user picture doesn't load" />
                     </div>
 
                     <div class="modal-footer">
@@ -175,16 +185,16 @@
                 </div>
             </div>
         </div>
-        
+
         <script>
 
-            $("#submit").on("click", function() {
+            $("#submit").on("click", function () {
                 function validateForm() {
                     var isValid = true;
-                    $(".form-control").each(function() {
+                    $(".form-control").each(function () {
                         if ($(this).val() === "") isValid = false;
                     });
-                    $(".chosen-select").each(function() {
+                    $(".chosen-select").each(function () {
                         if ($(this).val() === "") isValid = false;
                     });
                     return isValid;
@@ -207,11 +217,10 @@
                         ]
                     };
                     var currentURL = window.location.origin;
-
-                    $.post(currentURL + "/api/friends", userData, function(data) {
+                    $.post(currentURL + "/api/friends", userData, function (data) {
                         $("#matchName").text(data.name);
                         $("#matchImg").attr("src", data.photo);
-                        $("#resultModal").modal("toggle");
+                        $("#resultsModal").modal("toggle");
                     });
                 } else {
                     alert("Please fill out all fields before submitting!");
@@ -220,5 +229,6 @@
             });
 
         </script>
-    </body>
+</body>
+
 </html>
